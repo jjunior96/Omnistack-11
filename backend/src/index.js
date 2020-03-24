@@ -1,17 +1,9 @@
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
 
 app.use(express.json());
-
-app.post('/users', (req, res) => {
-  const body = req.body;
-
-  console.log(body);
-  
-  return res.json({
-    aluno: 'Junior'
-  });
-})
+app.use(routes);
 
 app.listen(3333);
