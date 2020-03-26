@@ -1,5 +1,9 @@
 // Update with your config settings.
 
+// yarn knex migrate:make nome_migration => Cria migration
+// yarn knex migrate:latest              => Executa as migrations
+// yarn knex migrate:rollback            => Desfaz a ultima migration
+
 module.exports = {
 
   development: {
