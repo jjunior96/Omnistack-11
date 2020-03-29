@@ -3,9 +3,11 @@ import React, { useState } from 'react';
 import Header from './Header';
 
 function App() {
+  // Utilizando state
   const [counter, setCounter] = useState(0);
 
   function increment() {
+    // Respeitando o principio da imutabilidade
     setCounter(counter + 1);
   }
 
